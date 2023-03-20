@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wei Han--iWatch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/site.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">CiCi Yu</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-manue"><a href="home.html"> Home </a></li>
+            <li class="navbar-manue"><a href="http://uhPotato.github.io-us.com/Portfolio"> Portfolio </a></li>
+            <li class="navbar-manue"><a href="http://uhPotato.github.io-us.com/Portfolio/Resume-min.pdf"> Resume </a></li>        
+            <li class="active navbar-manue"><a href="#"> Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container topspacer">
+
+      <div class="row">
+          <div class="panel panel-default">
+            <div id="map1" class="map">
+            </div>
+          </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="contact-form">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-4 contact-form-bg">
+
+            <h3>WORK HARD . STUDY HARD . PLAY HARDER</h3>
+
+             <div>
+              
+                <nav class="circular-menu">
+
+                  <div class="circle">
+                    <a href="index.html" class="fa fa-home fa-3x"></a>
+                    <a href="https://www.facebook.com/victor.han.58" target="_blank" class="fa fa-facebook fa-3x"></a>
+                    <a href="https://twitter.com/Hanweifish" target="_blank" class="fa fa-twitter fa-3x"></a>
+                    <a href="http://www.linkedin.com/pub/wei-han/96/961/784/en" target="_blank" class="fa fa-linkedin fa-3x"></a>
+                    <a href="https://github.com/hanweifish" target="_blank" class="fa fa-github fa-3x"></a>
+                    <a href="mailto:hanweihw@gmail.com?subject=Hello Wei" class="fa fa-envelope fa-2x"></a>
+                    <a href="https://www.pinterest.com/hanweihw" target="_blank" class="fa fa-pinterest fa-3x"></a>
+                  </div>
+
+                  <a href="" class="menu-button"><img src="img/wei.jpg"></a>
+
+                </nav>
+            </div>
+
+
+          </div>
+
+
+          <div class="col-md-8 contact-form-bg" >
+            <p>
+              <span class="contact-font"><strong>THANKS </strong></span><span class="contact-font-small">for stopping by!<br></span></span>Feel free to contact me on&nbsp;<a title="Mail" href="mailto:kernel.yuxin@gmail.com">kernel.yuxin@gmail.com</a>&nbsp;or just below
+            </p>
+           <p> <b>Thank You! Your submission has been received. </b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer>
+        <div class="center">
+          <hr>
+          <p class="text-center">© Copyright 2015 CC Yu</p>
+      </div>
+    </footer>
+
+
+
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+    <script type="text/javascript">
+        jQuery(function ($) {
+            function init_map1() {
+                var myLocation = new google.maps.LatLng(37.401024, -122.102625);
+                var mapOptions = {
+                    center: myLocation,
+                    zoom: 10
+                };
+                var marker = new google.maps.Marker({
+                    position: myLocation,
+                    title: "May Job Location"
+                });
+                var map = new google.maps.Map(document.getElementById("map1"),
+                    mapOptions);
+                marker.setMap(map);
+            }
+            init_map1();
+        });
+    </script>
+
+    <script>
+      var items = document.querySelectorAll('.circle a');
+
+      for(var i = 0, l = items.length; i < l; i++) {
+        items[i].style.left = (50 - 35*Math.cos(-0.5 * Math.PI - 2*(1/l)*i*Math.PI)).toFixed(4) + "%";
+        items[i].style.top = (50 + 35*Math.sin(-0.5 * Math.PI - 2*(1/l)*i*Math.PI)).toFixed(4) + "%";
+      }
+
+      document.querySelector('.menu-button').onclick = function(e) {
+        e.preventDefault();
+        document.querySelector('.circle').classList.toggle('open');
+        $("#pcontent").css('visibility', 'hidden');
+      }
+
+    </script>
+  </body>
+</html>
