@@ -5,7 +5,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact | Philip David Davies</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    
+
+
+    <script>
+		function submitForm() {
+			// Get the form data
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var message = document.getElementById("message").value;
+
+			// Send the email
+			// ...
+
+			// Show the confirmation page
+			document.getElementById("contact-form").style.display = "none";
+			document.getElementById("confirmation-message").style.display = "block";
+		}
+	</script>
+
 </head>
 <body>
 
@@ -24,7 +43,7 @@
 		<section class="main-section">
 			<h1>Contact</h1>
 
-			<form id="contact-form" action="mailto:david.davies2022@gmail.com" method="get"></form>
+			<form id="contact-form" action="submit.php" method="post"></form>
 				<ul>
 					<li>
 						<label for="name">Name</label>
