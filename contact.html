@@ -63,11 +63,13 @@
                       // Get form data
                       let name = document.getElementById('name').value;
                       let email = document.getElementById('email').value;
+                      let company = document.getElementById('company').value;
                       let subject = document.getElementById('subject').value;
+                      
                       let message = document.getElementById('message').value;
               
                       // Email message
-                      let body = "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + message;
+                      let body = "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + "\nCompage: " + company +"\n" + message;
               
                       // Send email
                       let mailToLink = "mailto:david.davies2022@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
