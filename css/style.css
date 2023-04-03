@@ -4596,7 +4596,9 @@ input.toggle-round-flat:checked + label:after {
 }
 
 .container {
-    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     position: relative;
 	width: 100%;
 	max-width: 960px;
@@ -4604,12 +4606,12 @@ input.toggle-round-flat:checked + label:after {
 	clear: both;
 }
 
-  footer {
+footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    margin-top: auto;
   }
-  Make sure to wrap all the content of your HTML page in the .container div and add the footer element at the end of it. This should fix the footer to the bottom of the page.
+  /* Make sure to wrap all the content of your HTML page in the .container div and add the footer element at the end of it. This should fix the footer to the bottom of the page. */
   
   
   
