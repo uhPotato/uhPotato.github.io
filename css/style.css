@@ -4640,21 +4640,21 @@ h3 {
 }
 #logo {
 	width: 225px;
-	height: 80px;
+	height: 40px;
 	background: #4c5252;
 	float: left;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	text-align: center;
-	line-height: 80px;
+	line-height: 30px;
 	color: #fff;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 15px;
 	text-decoration: none;
 }
-nav {
+/* nav {
 	float: right;
 	margin-top: 25px;
-}
+} */
 nav a {
 	color: #999;
 	text-decoration: none;
