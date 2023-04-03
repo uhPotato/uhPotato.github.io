@@ -1567,7 +1567,7 @@ textarea {
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
     border: none;
     margin-bottom: 0;
-    padding: 20px;
+    /* padding: 20px; */
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -4596,11 +4596,25 @@ input.toggle-round-flat:checked + label:after {
 }
 
 .container {
+    min-height: 100%;
+    position: relative;
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
 	clear: both;
 }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  Make sure to wrap all the content of your HTML page in the .container div and add the footer element at the end of it. This should fix the footer to the bottom of the page.
+  
+  
+  
+  
+  
 h1, 
 h2,
 h3,
@@ -4878,7 +4892,8 @@ input[type=submit] {
 	}
 	.container {
 		max-width: 600px;
-	}
+    }
+    
 	#logo {
 		width: 100%;
 	}
