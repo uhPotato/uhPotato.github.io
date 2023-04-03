@@ -187,7 +187,8 @@ footer {
 .clock-center {
       width: 500px;
       height: 800px;
-      margin: 0 auto;
+	  margin: 0 auto;
+	  margin-bottom: -36px;
     }
 
  #clock {
