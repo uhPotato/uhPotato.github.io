@@ -4594,7 +4594,7 @@ input.toggle-round-flat:checked + label:after {
 
 .container {
 	width: 100%;
-	max-width: 960px;
+	max-width: 1020px;
 	margin: 0 auto;
 	clear: both;
 }
