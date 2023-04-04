@@ -417,7 +417,7 @@ a.btn-lg {
 /*------------------------------------------*/
 /*  Menu Buttons
 /*------------------------------------------*/
-.btn-nav,
+/* .btn-nav,
 a.btn-nav,
 .navbar-nav>li>a.btn-nav {
     color: #ffffff;
@@ -428,15 +428,15 @@ a.btn-nav,
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-}
+} */
 
-.active .btn-nav {
+/* .active .btn-nav {
     background-color: #525e6c !important; 
-}
+} */
 
-.cta-header .active .btn-blue.btn-nav {
+/* .cta-header .active .btn-blue.btn-nav {
     background-color: #439FE0 !important;
-}
+} */
 
 .cta-header .active .btn-nav.btn-green {
     background-color: #56B68B !important;
@@ -1559,7 +1559,7 @@ textarea {
 /* ==========================================================================
    08. HEADER NAVIGATION
 ========================================================================== */
-.navbar {
+/* .navbar {
     background-color: #fff;
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
     border: none;
@@ -1569,18 +1569,18 @@ textarea {
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-}
+} */
 
-.top-nav-collapse {
+/* .top-nav-collapse {
     padding: 15px;
-}
+} */
 
-.navbar-brand {
+/* .navbar-brand {
     padding: 3px 0 0;
     height: auto;
-}
+} */
 
-.navbar-nav>li>a {
+/* .navbar-nav>li>a {
     color: #404B55;
     font-size: 15px;
     font-weight: 700;
@@ -1588,8 +1588,8 @@ textarea {
     padding: 9px 15px;
     border-radius: 5px;
     margin-right: 2px;
-}
-
+} */
+/* 
 .navbar-nav>li>a:focus {
     background-color: transparent;
 }
@@ -1618,7 +1618,7 @@ textarea {
 
 .navbar-toggle:hover .icon-bar {
     opacity: 1;
-}
+} */
 
 /*------------------------------------------*/
 /*   Navbar Transparent/ Navbar Color
