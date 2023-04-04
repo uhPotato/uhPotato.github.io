@@ -4625,6 +4625,10 @@ h3 {
 	font-size: 22px;
 }
 
+.left-justified {
+    text-align: left;
+  }
+
 /*header*/
 
 #masthead {
