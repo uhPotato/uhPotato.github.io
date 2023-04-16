@@ -4774,7 +4774,7 @@ h3,
 	overflow: auto;
 	position: relative;
 	float: left;
-	margin: 20px 40px 25px;
+	margin: 20px 15px 25px;
 }
 .work:nth-child(even) {
 	margin-right: 40px;
