@@ -4744,6 +4744,7 @@ h3,
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     animation: play-gif 2s steps(1) infinite;
+    z-index: 1;
   }
   
   @keyframes play-gif {
@@ -4757,7 +4758,7 @@ h3,
   
   .image-link:hover .gif-overlay:hover {
     opacity: 1;
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
   }
 
 .work-jumbo {
