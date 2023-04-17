@@ -4758,10 +4758,11 @@ h3,
   
   .image-link:hover .gif-overlay:hover {
     opacity: 1;
-    /* animation-play-state: paused; */
+    animation-play-state: running;
   }
 
 .work-jumbo {
+    position: relative;
 	width: 590px;
 	overflow: auto;
 	position: relative;
