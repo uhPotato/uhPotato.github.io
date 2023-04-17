@@ -4727,6 +4727,28 @@ h3,
 /*portfolio page*/
 
 
+.image-link {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .gif-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/GameGIF.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image-link:hover .gif-overlay {
+    opacity: 1;
+  }
+
 .work-jumbo {
 	width: 590px;
 	overflow: auto;
