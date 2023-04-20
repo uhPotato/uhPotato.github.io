@@ -4678,8 +4678,15 @@ footer {
 	border-top: 8px solid #4aaaa5;
 	color: #ccc;
 	font-size: 12px;
-	text-align: center;
+    text-align: center;
+    position: relative;
+    margin-top: auto;
 }
+
+/* .stick-icky-footer {
+    position: relative;
+    margin-top: auto;
+  } */
 
 /*sidebar*/
 
@@ -4722,6 +4729,16 @@ h3,
 	max-width: 700px;
 	float: left;
 	border: 1px solid #ddd;
+}
+
+
+/*game page*/
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*portfolio page*/
