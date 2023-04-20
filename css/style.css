@@ -4678,6 +4678,7 @@ html, body {
   .wrapper {
     min-height: 100%;
     margin-bottom: -50px;
+    height: auto;
   }
   
   .content {
