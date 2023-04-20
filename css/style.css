@@ -4682,7 +4682,8 @@ html, body {
   }
   
   .content {
-    padding-bottom: 50px;
+    padding: 20px;
+    clear: both;
   }
 
 footer {
@@ -4701,6 +4702,7 @@ footer {
 }
 
 /* .stick-icky-footer {
+    height: 80px;
     position: relative;
     margin-top: auto;
   } */
