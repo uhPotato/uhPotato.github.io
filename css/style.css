@@ -4681,10 +4681,10 @@ html, body {
     height: auto;
   }
   
-  .content {
+  /* .content {
     padding: 20px;
     clear: both;
-  }
+  } */
 
 footer {
     height: 80px;
