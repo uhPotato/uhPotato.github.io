@@ -4670,12 +4670,23 @@ nav a:first-child {
 
 /*footer*/
 
-main {
-    min-height: calc(100vh - footer-height);
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+  }
+  
+  .content {
+    padding-bottom: 50px;
   }
 
 footer {
-	background: #666;
+    height: 80px;
+    background: #666;
 	color: #fff;
 	padding: 30px 0;
 	clear: both;
@@ -4685,6 +4696,7 @@ footer {
     text-align: center;
     position: relative;
     margin-top: auto;
+    clear: both;
 }
 
 /* .stick-icky-footer {
