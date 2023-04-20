@@ -60,10 +60,10 @@
                             <label for="company">Company</label>
                             <input type="text" id="company" name="company" placeholder="Company" required="required">
                         </li>
-                        <li>
+                        <!-- <li>
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-                        </li>
+                        </li> -->
                         <li>
                             <label for="subject">Subject</label>
                             <input type="text" id="subject" name="subject" placeholder="New Contact" required><br><br>
@@ -86,14 +86,14 @@
               
                       // Get form data
                       let name = document.getElementById('name').value;
-                      let email = document.getElementById('email').value;
+                      // let email = document.getElementById('email').value;
                       let company = document.getElementById('company').value;
                       let subject = document.getElementById('subject').value;
                       
                       let message = document.getElementById('message').value;
               
                       // Email message
-                      let body = "Name: " + name + "\nEmail: " + email + "\nCompany: " + company + "\nMessage: \n" + message;
+                      let body = "Name: " + name + "\nCompany: " + company + "\nMessage: \n" + message;
               
                       // Send email
                       let mailToLink = "mailto:david.davies2022@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
@@ -117,7 +117,7 @@
 		</section>
 	</div>
 
-	<footer>
+	<footer style="position: fixed; bottom: 0; clear: both; width: 100%">
 		<div class="container">
 			&copy; Copyright © 2022 Philip David Davies
 		</div>
