@@ -4670,6 +4670,10 @@ nav a:first-child {
 
 /*footer*/
 
+main {
+    min-height: calc(100vh - footer-height);
+  }
+
 footer {
 	background: #666;
 	color: #fff;
