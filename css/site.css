@@ -589,12 +589,12 @@ footer {
 	}
 	.ch-img-youtube {
 		background-image: url(../icon/YoutubeIcon.png);
-		font-size: 13px;
+		font-size: 10px;
 		background-size: contain;
 	}
 	.ch-img-twitter {
 		background-image: url(../icon/TwitterIcon.png);
-		font-size: 13px;
+		font-size: 10px;
 		background-size: contain;
 	}
 
