@@ -587,6 +587,16 @@ footer {
 		font-size: 13px;
 		background-size: contain;
 	}
+	.ch-img-youtube {
+		background-image: url(../icon/YoutubeIcon.png);
+		font-size: 13px;
+		background-size: contain;
+	}
+	.ch-img-twitter {
+		background-image: url(../icon/TwitterIcon.jpeg);
+		font-size: 13px;
+		background-size: contain;
+	}
 
 	.ch-img-skype {
 		background-image: url(../icon/skype-icon.png);
