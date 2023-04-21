@@ -4696,9 +4696,9 @@ footer {
 	color: #ccc;
 	font-size: 12px;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     margin-top: auto;
-    clear: both;
+    /* clear: both; */
 }
 
 /* .stick-icky-footer {
@@ -4743,7 +4743,7 @@ h3,
 .main-section {
 	background: #fff;
 	padding: 30px;
-	margin: 0 0 40px 0;
+	margin: 0 0 100px 0;
 	width: 100%;
 	max-width: 700px;
 	float: left;
