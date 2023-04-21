@@ -582,6 +582,11 @@ footer {
 		font-size: 13px;
 		background-size: contain;
 	}
+	.ch-img-game {
+		background-image: url(../icon/GamingIcon.png);
+		font-size: 13px;
+		background-size: contain;
+	}
 
 	.ch-img-skype {
 		background-image: url(../icon/skype-icon.png);
