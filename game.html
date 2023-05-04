@@ -29,7 +29,7 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 			  <div class="navbar-header">
-				
+			<button id="show-modal-btn">Game Specs</button>
 			  </div>
 			  <div>
 				<ul class="nav navbar-nav navbar-right">
@@ -42,13 +42,32 @@
 			  </div>
 			</div>
 		  </nav>
+	
+			  
 
 
+
+
+<div id="modal-container" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);">
+		<div id="modal-content">
+	<!-- <button onclick="hideModal()">Close</button> -->
+	<span class="close">&times;</span>
+	
+		<h1>Game Specs</h1>
+		<h2>Supported Browsers</h2>
+		<p>This Game is supporter on Latest Chrome and Firefox.<br>
+		This game is not supported on Safari Browser.</p>
+		<h2>Game Host</h2>
+		<p>This game is hosted on itch.io platform.</p>
+		<h2>Game Engine</h2>
+		<p>Unity Engine WebGL build</p>
+		<h2>Back End</h2>
+		<p>Microsoft Azure PlayFab API for database backend.</p>
+	</div>
+</div>
 <div class="content">
 	<div class="centered" style="margin-top: 50px;">
-		<!-- <iframe frameborder="0" src="https://itch.io/embed-upload/7732817?color=333333" allowfullscreen="" width="1280" height="720"><a href="https://sofa-potato.itch.io/pewpewpotato">Play PewPewPotato on itch.io</a></iframe> -->
-		<!-- <iframe frameborder="0" src="https://itch.io/embed-upload/7734829?color=333333" allowfullscreen="" width="1280" height="720"><a href="https://sofa-potato.itch.io/pewpewpotato">Play PewPewPotato on itch.io</a></iframe> -->
-		<iframe frameborder="0" src="https://itch.io/embed-upload/7734829?color=333333" allowfullscreen="" width="1280" height="740"><a href="https://sofa-potato.itch.io/pewpewpotato">Play PewPewPotato on itch.io</a></iframe>
+	<iframe frameborder="0" src="https://itch.io/embed-upload/7734829?color=333333" allowfullscreen="" width="1280" height="740"><a href="https://sofa-potato.itch.io/pewpewpotato">Play PewPewPotato on itch.io</a></iframe>
 		<!-- <iframe frameborder="0" src="https://itch.io/embed-upload/7732950?color=333333" allowfullscreen="" width="1280" height="720"><a href="https://sofa-potato.itch.io/pewpewpotato">Play PewPewPotato on itch.io</a></iframe> -->
 	</div>
 </div>
@@ -60,5 +79,28 @@
 		</div>
 	</footer> -->
 </div>
+
+<script>
+    var showModalBtn = document.getElementById("show-modal-btn");
+    var modalContainer = document.getElementById("modal-container");
+    var closeModalBtn = document.querySelector(".close");
+
+    // Show the modal when the button is clicked
+    showModalBtn.addEventListener("click", function() {
+      modalContainer.style.display = "block";
+    });
+
+    // Hide the modal when the close button is clicked
+    closeModalBtn.addEventListener("click", function() {
+      modalContainer.style.display = "none";
+    });
+
+    // Hide the modal when the user clicks outside of it
+    window.addEventListener("click", function(event) {
+      if (event.target == modalContainer) {
+        modalContainer.style.display = "none";
+      }
+    });
+</script>
 </body>
 </html>
