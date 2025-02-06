@@ -1564,7 +1564,7 @@ textarea {
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
     border: none;
     margin-bottom: 0;
-    /* padding: 20px; */
+    padding: 20px;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -4827,7 +4827,6 @@ h3,
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("image.gif");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0;
@@ -5007,12 +5006,15 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        padding-top: 20px; /* Adjust to fit your mobile navbar */
+      }
 	.container {
 		max-width: 720px;
 	}
 	.main-section {
-		width: 720px;
-		max-width: 720px;
+		width: 100%;
+		max-width: 100%;
 	}
 	.auth-image {
 		float: left;
@@ -5030,9 +5032,60 @@ input[type=submit] {
 		max-width: 720px;
 		margin-bottom: 40px;
 	}
+    /* Base styles */
+.navbar {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  .navbar-item a:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive styles for small screens */
+  .navbar-toggle {
+    display: none; /* Hidden by default */
+    background-color: #222;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .navbar-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+
+  }
+  
+  .navbar-menu.show {
+    display: flex; /* Show menu when toggled */
+  }
+  
+
+    .navbar-toggle {
+      display: block; /* Show the hamburger button */
+    }
+    .navbar-menu {
+      display: none; /* Hide menu initially */
+    }
+  
 }
 
-@media screen and (max-width: 640px) {
+/* @media screen and (max-width: 640px) {
 	#masthead {
 		position: static;
 		margin-bottom: 0px;
@@ -5069,5 +5122,8 @@ input[type=submit] {
 	.work:nth-child(even) {
 		margin-right: 0;
 	}
-}
+} */
+
+
+  
 
