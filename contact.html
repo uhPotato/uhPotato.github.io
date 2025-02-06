@@ -1,148 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Philip David Davies</title>
     <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
-   
+
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
+    />
 
-    
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-
-    
-
-	<!-- <header id="masthead">
-		<div class="container">
-			<a href="index.html" id="logo">David Davies</a>
-			<nav>
-				<a href="about.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</div>
-    </header> -->
-    
-    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container-fluid">
-			  <div class="navbar-header">
-				
-			  </div>
-			  <div>
-				<ul class="nav navbar-nav navbar-right">
-				  <li class="navbar-manue"><a href="index.html"> Home </a></li>
-				  <li class="navbar-manue"><a href="portfolio.html"> Portfolio </a></li>
-				  <li class="navbar-manue"><a href="resume.html"> Resume </a></li>        
-				  <li class="navbar-manue"><a href="about.html"> About Me</a></li>
-				  <li class="active navbar-manue"><a href="contact.html"> Contact</a></li>
-				</ul>
-			  </div>
-			</div>
-		  </nav> -->
-
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-        
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle" onclick="toggleMenu()">
             ☰
           </button>
-          </div>
-    
-          <div id="navbar-menu" class="navbar-menu">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="navbar-item"><a href="http://uhPotato.github.io">Home</a></li>
-            <li class="navbar-item"><a href="http://uhPotato.github.io/portfolio">Portfolio</a></li>
-            <li class="navbar-item"><a href="http://uhPotato.github.io/resume">Resume</a></li>
-            <li class="navbar-item"><a href="http://uhPotato.github.io/about.html">About Me</a></li>
-            <li class="active navbar-item"><a href="contact.html">Contact</a></li>
-          </ul>
-          </div>
         </div>
-        </nav>
 
-	<div id="main-container" class="container">
-		<section class="main-section">
-			<h1>Contact</h1>
+        <div id="navbar-menu" class="navbar-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-item">
+              <a href="http://uhPotato.github.io">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="http://uhPotato.github.io/portfolio">Portfolio</a>
+            </li>
+            <li class="navbar-item">
+              <a href="http://uhPotato.github.io/resume">Resume</a>
+            </li>
+            <li class="navbar-item">
+              <a href="http://uhPotato.github.io/about.html">About Me</a>
+            </li>
+            <li class="active navbar-item">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-			<form id="contact-form" onsubmit="sendEmail(event)" method="post">
-                    <ul>
-                        <li>
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" required="required">
-                        </li>
-                        <li>
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company" placeholder="Company" required="required">
-                        </li>
-                        <!-- <li>
+    <div id="main-container" class="container">
+      <section class="main-section">
+        <h1>Contact</h1>
+
+        <form id="contact-form" onsubmit="sendEmail(event)" method="post">
+          <ul>
+            <li>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required="required"
+              />
+            </li>
+            <li>
+              <label for="company">Company</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Company"
+                required="required"
+              />
+            </li>
+            <!-- <li>
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
                         </li> -->
-                        <li>
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="New Contact" required><br><br>
-                        </li>
-                        <li>
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required="required"></textarea>
-                        </li>
-                    </ul>
-                    <input type="submit" value="Submit">
-                </form>
+            <li>
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="New Contact"
+                required
+              /><br /><br />
+            </li>
+            <li>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required="required"
+              ></textarea>
+            </li>
+          </ul>
+          <input type="submit" value="Submit" />
+        </form>
 
-            <div id="confirmation" style="display:none;">
-                    <p>Thank you! Your message has been sent.</p>
-                  </div>
-            
-            <script>
-                    function sendEmail(event) {
-                      event.preventDefault();
-              
-                      // Get form data
-                      let name = document.getElementById('name').value;
-                      // let email = document.getElementById('email').value;
-                      let company = document.getElementById('company').value;
-                      let subject = document.getElementById('subject').value;
-                      
-                      let message = document.getElementById('message').value;
-              
-                      // Email message
-                      let body = "Name: " + name + "\nCompany: " + company + "\nMessage: \n" + message;
-              
-                      // Send email
-                      let mailToLink = "mailto:david.davies2022@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-                      window.location.href = mailToLink;
+        <div id="confirmation" style="display: none">
+          <p>Thank you! Your message has been sent.</p>
+        </div>
 
+        <script>
+          function sendEmail(event) {
+            event.preventDefault();
 
-                      document.getElementById('confirmation').style.display = 'block';
-                    }
-                  </script>
+            // Get form data
+            let name = document.getElementById("name").value;
+            // let email = document.getElementById('email').value;
+            let company = document.getElementById("company").value;
+            let subject = document.getElementById("subject").value;
 
-		</section>
+            let message = document.getElementById("message").value;
 
-		<section class="sidebar">
-			<div id="connect">
-                <h2>Connect with Me</h2>
-                
-				<a href="https://twitter.com/PhilipDavidDav4" target="_blank"><img src="../assets/images/twit.png" class="social" alt="Github" ></a>
-				<a href="https://www.linkedin.com/in/david-davies-b0a604158/" target="_blank"><img src="../assets/images/linkedin-128.png" class="social" alt="LinkedIn" ></a>
-				<a href="https://discord.com/users/SofaPotato#6557" target="_blank"><img src="../assets/images/discord.webp" class="social" alt="Stack Overflow" ></a>
-			</div>
-		</section>
-	</div>
+            // Email message
+            let body =
+              "Name: " +
+              name +
+              "\nCompany: " +
+              company +
+              "\nMessage: \n" +
+              message;
 
-	<footer style="position: fixed; bottom: 0; clear: both; width: 100%">
-		<div class="container">
-			&copy; Copyright © 2022 Philip David Davies
-		</div>
-	</footer>
-  <script src="js/toggleNav.js"></script>
-</body>
+            // Send email
+            let mailToLink =
+              "mailto:david.davies2022@gmail.com?subject=" +
+              encodeURIComponent(subject) +
+              "&body=" +
+              encodeURIComponent(body);
+            window.location.href = mailToLink;
+
+            document.getElementById("confirmation").style.display = "block";
+          }
+        </script>
+      </section>
+
+      <section class="sidebar">
+        <div id="connect">
+          <h2>Connect with Me</h2>
+
+          <a href="https://twitter.com/PhilipDavidDav4" target="_blank"
+            ><img src="../assets/images/twit.png" class="social" alt="Github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/david-davies-b0a604158/"
+            target="_blank"
+            ><img
+              src="../assets/images/linkedin-128.png"
+              class="social"
+              alt="LinkedIn"
+          /></a>
+          <a href="https://discord.com/users/SofaPotato#6557" target="_blank"
+            ><img
+              src="../assets/images/discord.webp"
+              class="social"
+              alt="Stack Overflow"
+          /></a>
+        </div>
+      </section>
+    </div>
+
+    <footer style="position: fixed; bottom: 0; clear: both; width: 100%">
+      <div class="container">&copy; Copyright © 2022 Philip David Davies</div>
+    </footer>
+    <script src="js/toggleNav.js"></script>
+  </body>
 </html>

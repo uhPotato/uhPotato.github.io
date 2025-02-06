@@ -1,142 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio | Philip David Davies</title>
-	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
-	
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Philip David Davies</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 
-	<!-- <header id="masthead">
-		<div class="container">
-			<a href="index.html" id="logo">David Davies</a>
-			<nav>
-				<a href="about.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</div>
-	</header> -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" onclick="toggleMenu()">
+            ☰
+          </button>
+        </div>
 
-	<!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container-fluid">
-			  <div class="navbar-header">
-				
-			  </div>
-			  <div>
-				<ul class="nav navbar-nav navbar-right">
-				  <li class="navbar-manue"><a href="index.html"> Home </a></li>
-				  <li class="active navbar-manue"><a href="portfolio.html"> Portfolio </a></li>
-				  <li class="navbar-manue"><a href="resume.html"> Resume </a></li>        
-				  <li class="navbar-manue"><a href="about.html"> About Me</a></li>
-				  <li class="navbar-manue"><a href="contact.html"> Contact</a></li>
-				</ul>
-			  </div>
-			</div>
-		  </nav> -->
-		  <nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container-fluid">
-			  <div class="navbar-header">
-			
-				<button type="button" class="navbar-toggle" onclick="toggleMenu()">
-				  ☰
-				</button>
-			  </div>
-	
-			  <div id="navbar-menu" class="navbar-menu">
-				<ul class="nav navbar-nav navbar-right">
-				  <li class="navbar-item"><a href="http://uhPotato.github.io">Home</a></li>
-				  <li class="active navbar-item"><a href="http://uhPotato.github.io/portfolio">Portfolio</a></li>
-				  <li class="navbar-item"><a href="http://uhPotato.github.io/resume">Resume</a></li>
-				  <li class="navbar-item"><a href="http://uhPotato.github.io/about.html">About Me</a></li>
-				  <li class="navbar-item"><a href="contact.html">Contact</a></li>
-				</ul>
-			  </div>
-			</div>
-		  </nav>
-		  <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container-fluid">
-			  <div class="navbar-header">
-				
-			  </div>
-			  <div>
-				<ul class="nav navbar-nav navbar-right">
-				  <li class="navbar-manue"><a href="http://uhPotato.github.io"> Home </a></li>
-				  <li class="active navbar-manue"><a href="http://uhPotato.github.io/portfolio"> Portfolio </a></li>
-				  <li class="navbar-manue"><a href="http://uhPotato.github.io/resume"> Resume </a></li>        
-				  <li class="navbar-manue"><a href="http://uhPotato.github.io/about.html"> About Me</a></li>
-				  <li class="navbar-manue"><a href="contact.html"> Contact</a></li>
-				</ul>
-			  </div>
-			</div>
-		  </nav> -->
+        <div id="navbar-menu" class="navbar-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-item">
+              <a href="http://uhPotato.github.io">Home</a>
+            </li>
+            <li class="active navbar-item">
+              <a href="http://uhPotato.github.io/portfolio">Portfolio</a>
+            </li>
+            <li class="navbar-item">
+              <a href="http://uhPotato.github.io/resume">Resume</a>
+            </li>
+            <li class="navbar-item">
+              <a href="http://uhPotato.github.io/about.html">About Me</a>
+            </li>
+            <li class="navbar-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-	<div id="main-container" class="container">
-		<section class="main-section">
-			<h1>Portfolio</h1>
+    <div id="main-container" class="container">
+      <section class="main-section">
+        <h1>Portfolio</h1>
 
-			<div class="work-jumbo">
-				<a class="image-link" href="https://uhpotato.github.io/game.html"><img src="assets/images/GameGIF.gif" style="width: 590px; height: auto;" alt="PewPewPotato"><div class="gif-overlay"></div></a>
+        <div class="work-jumbo">
+          <a class="image-link" href="https://uhpotato.github.io/game.html"
+            ><img
+              src="assets/images/GameGIF.gif"
+              style="width: 590px; height: auto"
+              alt="PewPewPotato" />
+            <div class="gif-overlay"></div
+          ></a>
 
-				<a href="https://uhpotato.github.io/game.html"><h3>PewPew Potato</h3></a>
-			</div>
+          <a href="https://uhpotato.github.io/game.html"
+            ><h3>PewPew Potato</h3></a
+          >
+        </div>
 
-			<div class="work">
-				<a href="https://uhpotato.github.io/Hangman/"><img src="assets/images/TileImage-640-480-1.jpg" alt="hangman"></a>
+        <div class="work">
+          <a href="https://uhpotato.github.io/Hangman/"
+            ><img src="assets/images/TileImage-640-480-1.jpg" alt="hangman"
+          /></a>
 
-				<a href="https://uhpotato.github.io/Hangman/"><h3>Hangman</h3></a>
-			</div>
-			<div class="work">
-				<a href="https://uhpotato.github.io/CrystalCollector/"><img src="assets/images/TileImage-640-480-2.png" alt="Crystal Game"></a>
+          <a href="https://uhpotato.github.io/Hangman/"><h3>Hangman</h3></a>
+        </div>
+        <div class="work">
+          <a href="https://uhpotato.github.io/CrystalCollector/"
+            ><img
+              src="assets/images/TileImage-640-480-2.png"
+              alt="Crystal Game"
+          /></a>
 
-				<a href="https://uhpotato.github.io/CrystalCollector/"><h3>Crystal Game</h3></a>
-			</div>
-			<div class="work">
-                <a href="https://uhpotato.github.io/Trivia/"><img src="assets/images/TileImage-640-480-5.jpg" alt="Trivia Game"></a>
+          <a href="https://uhpotato.github.io/CrystalCollector/"
+            ><h3>Crystal Game</h3></a
+          >
+        </div>
+        <div class="work">
+          <a href="https://uhpotato.github.io/Trivia/"
+            ><img src="assets/images/TileImage-640-480-5.jpg" alt="Trivia Game"
+          /></a>
 
-				<a href="https://uhpotato.github.io/Trivia/"><h3>Trivia Game</h3></a>
-			</div>
-			<div class="work">
-				<a href="https://uhpotato.github.io/GIF-API/"><img src="assets/images/TileImage-640-480-7.jpg" alt="Gif Generator"></a>
+          <a href="https://uhpotato.github.io/Trivia/"><h3>Trivia Game</h3></a>
+        </div>
+        <div class="work">
+          <a href="https://uhpotato.github.io/GIF-API/"
+            ><img
+              src="assets/images/TileImage-640-480-7.jpg"
+              alt="Gif Generator"
+          /></a>
 
-				<a href="https://uhpotato.github.io/GIF-API/"><h3>Gif Generator</h3></a>
-			</div>
-			<div class="work">
-                <a href = "https://uhpotato.github.io/Fun-Finder/"><img src="assets/images/TileImage-640-480-9.jpg" alt="Fun Finder"></a>
-				<a href = "https://uhpotato.github.io/Fun-Finder/"><h4>Fun Finder<br><sub>API down</sub></h4></a>
-			</div>
-			<div class="work">
-                <a href = "https://bobs-burgers-pdd.herokuapp.com/index"><img src="assets/images/Bobs_Burger.jpg" alt="Bobs Burgers"></a>
-				<a href = "https://bobs-burgers-pdd.herokuapp.com/index"><h4>Bobs Burgers<br><sub>heroku expired</sub></h4></a>
-			</div>
+          <a href="https://uhpotato.github.io/GIF-API/"
+            ><h3>Gif Generator</h3></a
+          >
+        </div>
+        <div class="work">
+          <a href="https://uhpotato.github.io/Fun-Finder/"
+            ><img src="assets/images/TileImage-640-480-9.jpg" alt="Fun Finder"
+          /></a>
+          <a href="https://uhpotato.github.io/Fun-Finder/"
+            ><h4>Fun Finder<br /><sub>API down</sub></h4></a
+          >
+        </div>
+        <div class="work">
+          <a href="https://bobs-burgers-pdd.herokuapp.com/index"
+            ><img src="assets/images/Bobs_Burger.jpg" alt="Bobs Burgers"
+          /></a>
+          <a href="https://bobs-burgers-pdd.herokuapp.com/index"
+            ><h4>Bobs Burgers<br /><sub>heroku expired</sub></h4></a
+          >
+        </div>
+      </section>
 
-		</section>
+      <section class="sidebar">
+        <div id="connect">
+          <h2>Connect with Me</h2>
 
-		<section class="sidebar">
-			<div id="connect">
-				<h2>Connect with Me</h2>
+          <a href="https://github.com/uhPotato" target="_blank"
+            ><img
+              src="assets/images/github-128.png"
+              class="social"
+              alt="Github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/david-davies-b0a604158/"
+            target="_blank"
+            ><img
+              src="assets/images/linkedin-128.png"
+              class="social"
+              alt="LinkedIn"
+          /></a>
+          <a
+            href="https://stackoverflow.com/users/9537945/daviespd?tab=profile"
+            target="_blank"
+            ><img
+              src="assets/images/stackoverflow-128.png"
+              class="social"
+              alt="Stack Overflow"
+          /></a>
+        </div>
+      </section>
+    </div>
 
-				<a href="https://github.com/uhPotato" target="_blank"><img src="assets/images/github-128.png" class="social" alt="Github" ></a>
-				<a href="https://www.linkedin.com/in/david-davies-b0a604158/" target="_blank"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" ></a>
-				<a href="https://stackoverflow.com/users/9537945/daviespd?tab=profile" target="_blank"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" ></a>
-			</div>
-		</section>
-	</div>
-
-	<footer>
-		<div class="container">
-			&copy; Copyright © 2022 Philip David Davies
-		</div>
-	</footer>
-	<script src="js/toggleNav.js"></script>
-
-</body>
+    <footer>
+      <div class="container">&copy; Copyright © 2022 Philip David Davies</div>
+    </footer>
+    <script src="js/toggleNav.js"></script>
+  </body>
 </html>

@@ -2,345 +2,365 @@
 <html>
   <head>
     <title>Home</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 minimum-scale=1.0 user-scalable=no target-densityDpi=device-dpi" />
-    <!-- Bootstrap -->   
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width initial-scale=1.0 maximum-scale=1.0 minimum-scale=1.0 user-scalable=no target-densityDpi=device-dpi"
+    />
+    <!-- Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
+    />
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link href="css/site.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
-    <script src='js/slidetounlock.js'></script>
-    <script src="js/time.js"></script>
-   
-    !-- FAVICON  -->
-    <!-- Place your favicon.ico in the images directory -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/site.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <meta property="og:image" content="https://uhpotato.github.io/assets/images/OGImage.png">
-    <meta property="og:title" content="David Davies Website">
-    <meta property="og:description" content="Website with All of my information and Personal Projects. Resume. Portfolio. About Page. Contact. Please Check out my browser based Unity WebGL game!">
+    <script src="js/slidetounlock.js"></script>
+    <script src="js/time.js"></script>
+
+    !-- FAVICON -->
+    <!-- Place your favicon.ico in the images directory -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <meta
+      property="og:image"
+      content="https://uhpotato.github.io/assets/images/OGImage.png"
+    />
+    <meta property="og:title" content="David Davies Website" />
+    <meta
+      property="og:description"
+      content="Website with All of my information and Personal Projects. Resume. Portfolio. About Page. Contact. Please Check out my browser based Unity WebGL game!"
+    />
   </head>
 
   <body class="homepage-set">
-    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          
+          <button type="button" class="navbar-toggle" onclick="toggleMenu()">
+            ☰
+          </button>
         </div>
-        <div>
+
+        <div id="navbar-menu" class="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active navbar-manue"><a href="http://uhPotato.github.io"> Home </a></li>
-            <li class="navbar-manue"><a href="http://uhPotato.github.io/portfolio"> Portfolio </a></li>
-            <li class="navbar-manue"><a href="http://uhPotato.github.io/resume"> Resume </a></li>        
-            <li class="navbar-manue"><a href="http://uhPotato.github.io/about.html"> About Me</a></li>
-            <li class="navbar-manue"><a href="contact.html"> Contact</a></li>
+            <li class="active navbar-item">
+              <a href="http://uhPotato.github.io">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="http://uhPotato.github.io/portfolio">Portfolio</a>
+            </li>
+            <li class="navbar-item">
+              <a href="http://uhPotato.github.io/resume">Resume</a>
+            </li>
+            <li class="navbar-item">
+              <a href="http://uhPotato.github.io/about.html">About Me</a>
+            </li>
+            <li class="navbar-item"><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
-    </nav> -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container-fluid">
-			  <div class="navbar-header">
-			
-				<button type="button" class="navbar-toggle" onclick="toggleMenu()">
-				  ☰
-				</button>
-			  </div>
-	
-			  <div id="navbar-menu" class="navbar-menu">
-				<ul class="nav navbar-nav navbar-right">
-				  <li class="active navbar-item"><a href="http://uhPotato.github.io">Home</a></li>
-				  <li class="navbar-item"><a href="http://uhPotato.github.io/portfolio">Portfolio</a></li>
-				  <li class="navbar-item"><a href="http://uhPotato.github.io/resume">Resume</a></li>
-				  <li class="navbar-item"><a href="http://uhPotato.github.io/about.html">About Me</a></li>
-				  <li class="navbar-item"><a href="contact.html">Contact</a></li>
-				</ul>
-			  </div>
-			</div>
-		  </nav>
+    </nav>
 
-  <div>
+    <div>
+      <div class="content centered">
+        <div class="container topspacer">
+          <div class="row">
+            <div class="clock-center">
+              <ul id="clock">
+                <li id="watchpoint"></li>
+                <li id="sec"></li>
+                <li id="hour"></li>
+                <li id="min"></li>
+              </ul>
 
- <div class="content centered">
-    <div class="container topspacer">
-      <div class="row">
-        <div class="clock-center">
-          <ul id="clock">
-            <li id="watchpoint"></li>
-            <li id="sec"></li>
-            <li id="hour"></li>
-            <li id="min"></li>
-          </ul>
+              <div id="well">
+                <div class="unlock-content">
+                  <strong id="slider"></strong> <span>Slide to unlock</span>
+                </div>
+              </div>
 
-          <div id="well">
-            <div class="unlock-content"><strong id="slider"></strong> <span>Slide to unlock</span></div>
-          </div>
-
-          <!-- After sliding, show icons -->
-          <div class="clock-menu-lists">
-
-        <div class="ch-grid-top-first">
-            <ul class="ch-grid">
-
-              <li class="li-img-sm">
-                <a href="index.html" target="_blank">
-                  <div class="ch-item ch-img-home">
-                    <div class="ch-info-wrap">
-                      <div class="ch-info">
-                        <div class="ch-info-front ch-img-home"></div>
-                        <div class="ch-info-back">
-                          <div class="content">Home</div>
+              <!-- After sliding, show icons -->
+              <div class="clock-menu-lists">
+                <div class="ch-grid-top-first">
+                  <ul class="ch-grid">
+                    <li class="li-img-sm">
+                      <a href="index.html" target="_blank">
+                        <div class="ch-item ch-img-home">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-home"></div>
+                              <div class="ch-info-back">
+                                <div class="content">Home</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div> <!-- End of first Row -->
-
-       <div class="ch-grid-top">
-          <ul class="ch-grid">
-
-            <li class="li-img-md">
-               <a href="https://github.com/uhPotato" target="_blank">
-                <div class="ch-item ch-img-github">
-                  <div class="ch-info-wrap">
-                    <div class="ch-info">
-                      <div class="ch-info-front ch-img-github"></div>
-                      <div class="ch-info-back">
-                        <div class="content">GitHub</div>
-                      </div>
-                    </div>
-                  </div>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              </a>
-            </li>
+                <!-- End of first Row -->
 
-            <li class="li-img-md">
-              <a href="https://www.linkedin.com/in/david-davies-b0a604158/" target="_blank">
-                <div class="ch-item ch-img-linkedin">
-                  <div class="ch-info-wrap">
-                    <div class="ch-info">
-                      <div class="ch-info-front ch-img-linkedin"></div>
-                      <div class="ch-info-back">
-                        <div class="content">Linkedin</div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="ch-grid-top">
+                  <ul class="ch-grid">
+                    <li class="li-img-md">
+                      <a href="https://github.com/uhPotato" target="_blank">
+                        <div class="ch-item ch-img-github">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-github"></div>
+                              <div class="ch-info-back">
+                                <div class="content">GitHub</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="li-img-md">
+                      <a
+                        href="https://www.linkedin.com/in/david-davies-b0a604158/"
+                        target="_blank"
+                      >
+                        <div class="ch-item ch-img-linkedin">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-linkedin"></div>
+                              <div class="ch-info-back">
+                                <div class="content">Linkedin</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="li-img-md">
+                      <a
+                        href="https://twitter.com/PhilipDavidDav4"
+                        target="_blank"
+                      >
+                        <div class="ch-item ch-img-twitter">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-twitter"></div>
+                              <div class="ch-info-back">
+                                <div class="content">Twitter</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- End of Row 2 -->
                 </div>
-              </a>
-            </li>
+                <!-- ch-grid-top -->
 
-            <li class="li-img-md">
-              <a href="https://twitter.com/PhilipDavidDav4" target="_blank">
-              <div class="ch-item ch-img-twitter">
-              <div class="ch-info-wrap">
-              <div class="ch-info">
-              <div class="ch-info-front ch-img-twitter"></div>
-              <div class="ch-info-back">
-              <div class="content">Twitter</div>
-              </div> 
-              </div>
-              </div>
-              </div>
-              </a>
-             </li>
+                <div class="ch-grid-middle">
+                  <ul class="ch-grid">
+                    <li class="li-img-md">
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100010686942584"
+                        target="_blank"
+                      >
+                        <div class="ch-item ch-img-facebook">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-facebook"></div>
+                              <div class="ch-info-back">
+                                <div class="content">Facebook</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
 
-          </ul> <!-- End of Row 2 -->
-      </div> <!-- ch-grid-top -->
+                    <li class="li-img-lg">
+                      <a href="game.html" target="_self">
+                        <div class="ch-item ch-img-game">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-game"></div>
+                              <div class="ch-info-back">
+                                <div class="content">Game</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
 
+                    <li class="li-img-lg">
+                      <a
+                        href="mailto:david.davies2022@gmail.com?subject=Hello David"
+                        target="_blank"
+                      >
+                        <div class="ch-item ch-img-email">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-email"></div>
+                              <div class="ch-info-back">
+                                <div class="content">Email</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
 
-      <div class="ch-grid-middle">
-        <ul class="ch-grid">
-        <li class="li-img-md">
-          <a href="https://www.facebook.com/profile.php?id=100010686942584" target="_blank">
-            <div class="ch-item ch-img-facebook">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-facebook"></div>
-                  <div class="ch-info-back">
-                    <div class="content">Facebook</div>
-                  </div>
+                    <li class="li-img-md">
+                      <a
+                        href="https://www.youtube.com/@philipdaviddavies9478/videos"
+                        target="_blank"
+                      >
+                        <div class="ch-item ch-img-youtube">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-youtube"></div>
+                              <div class="ch-info-back">
+                                <div class="content">YouTube</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-            </div>
-          </a>
-        </li>
 
-        <li class="li-img-lg">
-            <a href="game.html" target="_self">
-              <div class="ch-item ch-img-game">
-                <div class="ch-info-wrap">
-                  <div class="ch-info">
-                    <div class="ch-info-front ch-img-game"></div>
-                    <div class="ch-info-back">
-                      <div class="content">Game</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            </li> 
-
-        <li class="li-img-lg">
-          <a href="mailto:david.davies2022@gmail.com?subject=Hello David" target="_blank">
-            <div class="ch-item ch-img-email">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-email"></div>
-                  <div class="ch-info-back">
-                    <div class="content">Email</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </a>
-          </li>
-
-       
-         <li class="li-img-md">
-          <a href="https://www.youtube.com/@philipdaviddavies9478/videos" target="_blank">
-            <div class="ch-item ch-img-youtube">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-youtube"></div>
-                  <div class="ch-info-back">
-                    <div class="content">YouTube</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          </li> 
-        </ul>
-        </div>
-
-
-        <div class="ch-grid-bottom">
-        <ul class="ch-grid">
-
-            <li class="li-img-md">
+                <div class="ch-grid-bottom">
+                  <ul class="ch-grid">
+                    <li class="li-img-md">
                       <a href="http://uhPotato.github.io/resume" target="_self">
-                <div class="ch-item ch-img-resume">
-                  <div class="ch-info-wrap">
-                    <div class="ch-info">
-                      <div class="ch-info-front ch-img-resume"></div>
-                      <div class="ch-info-back">
-                        <div class="content">Resume</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
+                        <div class="ch-item ch-img-resume">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-resume"></div>
+                              <div class="ch-info-back">
+                                <div class="content">Resume</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
 
-            <li class="li-img-lg">
+                    <li class="li-img-lg">
                       <a href="portfolio.html" target="_self">
-                <div class="ch-item ch-img-projects">
-                  <div class="ch-info-wrap">
-                    <div class="ch-info">
-                      <div class="ch-info-front ch-img-projects"></div>
-                      <div class="ch-info-back">
-                        <div class="content">Projects</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
+                        <div class="ch-item ch-img-projects">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-projects"></div>
+                              <div class="ch-info-back">
+                                <div class="content">Projects</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
 
-            <li class="li-img-md">
-                     <a href="about.html" target="_self">
-                <div class="ch-item ch-img-aboutme">
-                  <div class="ch-info-wrap">
-                    <div class="ch-info">
-                      <div class="ch-info-front ch-img-aboutme"></div>
-                      <div class="ch-info-back">
-                        <div class="content">About</div>
-                      </div>
-                    </div>
-                  </div>
+                    <li class="li-img-md">
+                      <a href="about.html" target="_self">
+                        <div class="ch-item ch-img-aboutme">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-aboutme"></div>
+                              <div class="ch-info-back">
+                                <div class="content">About</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              </a>
-            </li>
-                    </ul>
-                  </div>
 
                 <div class="ch-grid-bottom-last">
-                    <ul class="ch-grid">
-
-            <li class="li-img-md">
+                  <ul class="ch-grid">
+                    <li class="li-img-md">
                       <a href="contact.html" target="_self">
-                <div class="ch-item ch-img-contactme">
-                  <div class="ch-info-wrap">
-                    <div class="ch-info">
-                      <div class="ch-info-front ch-img-contactme"></div>
-                      <div class="ch-info-back">
-                        <div class="content">Contact</div>
-                      </div>
-                    </div>
-                  </div>
+                        <div class="ch-item ch-img-contactme">
+                          <div class="ch-info-wrap">
+                            <div class="ch-info">
+                              <div class="ch-info-front ch-img-contactme"></div>
+                              <div class="ch-info-back">
+                                <div class="content">Contact</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              </a>
-            </li>
-
-        
-        </ul>
-      </div> <!-- middle row -->
-
-
-      </div>
-
-
+                <!-- middle row -->
+              </div>
+            </div>
+          </div>
         </div>
-
-
       </div>
-    </div>
-  </div>
-  
-    <!-- <footer>
+
+      <!-- <footer>
         <div class="center">
           <hr>
           <p class="text-center">Copyright © 2018 Philip David Davies</p>
       </div>
     </footer> -->
 
-    <footer style="position: fixed; bottom: 0; clear: both;">
+      <footer style="position: fixed; bottom: 0; clear: both">
         <!-- <div class="container"> -->
-          <div>
-          &copy; Copyright © 2020 Philip David Davies
-        </div>
+        <div>&copy; Copyright © 2020 Philip David Davies</div>
       </footer>
     </div>
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-      ga('create', 'UA-64339998-1', 'auto');
-      ga('send', 'pageview');
+      ga("create", "UA-64339998-1", "auto");
+      ga("send", "pageview");
+    </script>
+    <!-- Google Analytics tracking code  -->
 
-    </script> <!-- Google Analytics tracking code  -->
-      
-
-
-  
-
-
-      <script src="js/toggleNav.js"></script>
+    <script src="js/toggleNav.js"></script>
   </body>
 </html>
